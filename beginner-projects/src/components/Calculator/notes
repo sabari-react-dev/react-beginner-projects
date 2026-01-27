@@ -1,0 +1,10 @@
+Display component-
+    It gets value as input, which are numbers and operations, and returns that with good style
+
+Button component-
+    It gets label and onClick as inputs, and returns label which is calculator button, one by one all the buttons, and onClicking of that button, handleClick function defined in
+    Calculator component start working to give desired output
+
+Calculator component-
+    It returns two components Display, then Button component in map function by iterating all buttons
+

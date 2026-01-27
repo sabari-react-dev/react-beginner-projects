@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+.display {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.calculator {
+  width: 200px;
+  margin: 50px auto;
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+
 .counter{
   height:500px;
   width:500px;
