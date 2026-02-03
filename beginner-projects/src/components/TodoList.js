@@ -1,7 +1,16 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 const TodoList=()=>{
-    const[todos,setTodos]=useState([]);
+    // const[todos,setTodos]=useState([]);
+    const [todos,setTodos]=useState(()=>{
+        const savedTodos= localStorage.getItem("todos")
+        return savedTodos?JSON.parse(savedTodos):[]
+                            
+    })
     const [text,setText]=useState("");
+
+    useEffect(()=>{
+        localStorage.setItem("todos",JSON.stringify(todos))
+    })
 
     const addTodo=()=>{
 
